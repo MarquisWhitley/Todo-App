@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/323f47796f.js" crossorigin="anonymous"></script>
+
+
     <title>Todo App</title>
 </head>
 <body>
     <div id="container">
         <header id="heading"><h1>To-do List</h1></header>
         <div class="input_container">
-            <input type="text" id="inputfield" placeholder="Tasks" size="50%">
-            <button type="button" id="addtask">ADD</button>
+            <form action="" id="form">
+                <input type="text" id="inputfield" placeholder="Tasks">
+                <button type="submit" id="addtask">ADD</button>
+            </form>
+            
         </div>
         <div class="output_container">
             <div class="task">Laundry</div>
             <div class="task">Dishes</div>
-            <div class="task">Take out Trash</div>
+            <div class="task checked">Take out Trash</div>
             <div class="task">Wash Car</div>
             <div class="task">Cook Dinner</div>
-            <div class="task">Walk the Dog</div>
+            <div class="task checked">Walk the Dog</div>
         </div>
     </div>
     <script src="main.js"></script>
 </body>
-</html>
+</html><i class="fas fa-check"></i><i class="fas fa-times"></i>
