@@ -33,12 +33,13 @@ a {
   padding: 2.5vh;
   width: 50vw;
   margin-top: 10vh;
+  border-radius: 20px;
 }
 
 #heading {
   font-family: "Quicksand", sans-serif;
   margin-bottom: 30px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -117,6 +118,8 @@ a {
 
 .error-message {
   color: red;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 #form {
   display: flex;
