@@ -8,6 +8,7 @@
 
 :root {
     font-family: 'Lato', sans-serif;
+    --bg-color-: rgb(177, 177, 177);
 }
 
 body {
@@ -68,7 +69,7 @@ a {
 }
 
 #addtask:hover {
-    background-color: rgb(177, 177, 177);
+    background-color: var(--bg-color-);
 }
 
 .task {
@@ -84,10 +85,15 @@ a {
     padding: 10px 0px 0px 20px;
     cursor: pointer;
     transition: all 0.5s;
+    overflow: hidden;
+}
+.task::selection {
+    color: none;
+    background: none;
 }
 
 .task:hover{
-    background-color: rgb(177, 177, 177);
+    background-color: var(--bg-color-);
 }
 
 .output_container{
@@ -108,4 +114,12 @@ a {
 .checked {
     font-style: oblique;
     text-decoration: line-through;
+    background-color: rgb(177, 177, 177);
+}
+
+.error-message {
+    color: red;
+}
+#form {
+    display: flex;
 }
