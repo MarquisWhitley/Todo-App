@@ -57,7 +57,5 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   create();
-  const containerLength = container.children.length;
-  console.log(containerLength);
   input.value = "";
 });
